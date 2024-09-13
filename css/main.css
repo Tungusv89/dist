@@ -130,7 +130,7 @@ section {
   background-color: #f3f3f3;
   border-radius: 10px;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .regaly-body .item {
     flex: 360px;
     max-width: 360px;
@@ -163,7 +163,7 @@ section {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .direction-section .directions {
     flex-direction: row;
   }
@@ -171,7 +171,7 @@ section {
 .direction-section .directions .direction-item {
   display: none;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .direction-section .directions .direction-item {
     display: block;
   }
@@ -210,7 +210,7 @@ section {
   width: 510px;
   position: relative;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .direction-section .directions .swiper-directions {
     display: block;
   }
@@ -244,7 +244,7 @@ section {
   position: relative;
   margin-bottom: 10px;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .direction-section .directions .box {
     display: none;
   }
@@ -266,6 +266,7 @@ section {
   right: 20px;
   font-size: 25px;
   font-weight: bold;
+  color: #cbcbcb;
 }
 .direction-section .directions .box.active .label {
   color: #3f88c5;
@@ -341,7 +342,7 @@ section {
   height: 100px;
   border-radius: 70px;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .clients-body .cards .item .profile_fio .img {
     background-size: 126px;
     width: 126px;
@@ -352,7 +353,7 @@ section {
   padding-left: 90px;
   font-size: 17px;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .clients-body .cards .item .profile_fio .fio {
     padding-left: 107px;
   }
@@ -372,7 +373,7 @@ section {
 .clients-body .logos {
   display: none;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .clients-body .logos {
     margin-top: 50px;
     display: grid;
@@ -380,9 +381,14 @@ section {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .clients-body .logos {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .clients-body .logos > div {
@@ -401,7 +407,7 @@ section {
 .clients-body .swiper-logos > div img {
   max-width: 200px;
 }
-@media (min-width: 1054px) {
+@media (min-width: 1024px) {
   .clients-body .swiper-logos {
     display: none;
   }
